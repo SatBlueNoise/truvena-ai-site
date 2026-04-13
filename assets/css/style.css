@@ -1,137 +1,175 @@
-/* ====== GLOBAL ====== */
+/* ===========================
+   GLOBAL DESIGN SYSTEM
+   Truvena.ai – McKinsey‑Modern
+   =========================== */
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --navy: #0A1A2F;
+    --navy-light: #1C3F60;
+    --blue-accent: #0057B8;
+    --gray-bg: #F5F7FA;
+    --text-dark: #1A1A1A;
+    --text-light: #FFFFFF;
+
+    --max-width: 1100px;
+
+    --space-xs: 12px;
+    --space-sm: 24px;
+    --space-md: 48px;
+    --space-lg: 80px;
+    --space-xl: 120px;
+}
 
 body {
     margin: 0;
-    font-family: "Inter", Arial, sans-serif;
-    color: #222;
-    background: #fafafa;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background: white;
+    line-height: 1.6;
 }
+
+/* ===========================
+   LAYOUT
+   =========================== */
 
 .container {
     width: 90%;
-    max-width: 1100px;
+    max-width: var(--max-width);
     margin: auto;
 }
 
-h1, h2, h3, h4 {
-    margin-top: 0;
-}
-
-/* ====== HEADER ====== */
+/* ===========================
+   HEADER
+   =========================== */
 
 header {
-    background: white;
-    border-bottom: 1px solid #eee;
-    padding: 15px 0;
+    background: var(--navy);
+    padding: var(--space-sm) 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    font-size: 24px;
+    color: var(--text-light);
+    font-size: 26px;
     font-weight: 700;
-}
-
-nav {
-    float: right;
+    letter-spacing: 0.5px;
 }
 
 nav a {
-    margin-left: 20px;
+    color: var(--text-light);
+    margin-left: var(--space-sm);
     text-decoration: none;
-    color: #333;
     font-weight: 500;
+    opacity: 0.9;
 }
 
-nav a.cta-nav {
-    padding: 6px 12px;
-    background: #0057b8;
-    color: white;
+nav a:hover {
+    opacity: 1;
+}
+
+nav .cta-nav {
+    padding: 8px 16px;
+    background: var(--blue-accent);
     border-radius: 4px;
 }
 
-nav a.active {
-    font-weight: 700;
-}
-
-/* ====== HERO ====== */
+/* ===========================
+   HERO SECTION
+   =========================== */
 
 .hero {
-    background: #f0f4ff;
-    padding: 80px 0;
-    text-align: center;
+    background: var(--navy);
+    color: var(--text-light);
+    padding: var(--space-xl) 0;
+
+    /* Subtle geometric pattern */
+    background-image:
+        linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 40%),
+        linear-gradient(225deg, rgba(255,255,255,0.04) 0%, transparent 40%);
 }
 
-.hero h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin-bottom: var(--space-md);
 }
 
 .cta-button {
     display: inline-block;
-    padding: 12px 24px;
-    background: #0057b8;
+    padding: 14px 28px;
+    background: var(--blue-accent);
     color: white;
     text-decoration: none;
     border-radius: 4px;
-    margin-top: 20px;
+    font-weight: 600;
 }
 
-/* ====== PILLARS ====== */
+/* ===========================
+   SECTIONS
+   =========================== */
 
-.pillars {
-    padding: 60px 0;
+section {
+    padding: var(--space-lg) 0;
 }
 
+section h2 {
+    font-size: 32px;
+    margin-bottom: var(--space-sm);
+}
+
+section h3 {
+    font-size: 24px;
+    margin-top: var(--space-md);
+}
+
+.gray-section {
+    background: var(--gray-bg);
+}
+
+/* Pillars */
 .pillar-grid {
     display: flex;
-    gap: 30px;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
 }
 
 .pillar {
     background: white;
-    padding: 20px;
+    padding: var(--space-sm);
     border-radius: 6px;
-    border: 1px solid #eee;
+    border: 1px solid #E5E7EB;
     flex: 1;
 }
 
-/* ====== VALUE SECTION ====== */
-
-.value {
-    background: #fff;
-    padding: 60px 0;
-    text-align: center;
-}
-
-/* ====== PAGE HEADER ====== */
-
-.page-header {
-    background: #eef2ff;
-    padding: 60px 0;
-    text-align: center;
-}
-
-/* ====== CONTENT ====== */
-
-.content {
-    padding: 40px 0;
-}
-
-.content ul {
-    line-height: 1.8;
-}
-
-/* ====== FOOTER ====== */
+/* ===========================
+   FOOTER
+   =========================== */
 
 footer {
-    background: #f5f5f5;
-    padding: 20px 0;
+    background: var(--navy);
+    color: var(--text-light);
     text-align: center;
-    margin-top: 40px;
+    padding: var(--space-md) 0;
+    margin-top: var(--space-lg);
 }
 
-.disclaimer {
-    font-size: 12px;
-    color: #666;
-    margin-top: 10px;
+footer p {
+    margin: 6px 0;
 }
+
+
 
