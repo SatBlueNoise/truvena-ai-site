@@ -1,0 +1,137 @@
+/* ====== GLOBAL ====== */
+
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    color: #222;
+    background: #fafafa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 0;
+}
+
+/* ====== HEADER ====== */
+
+header {
+    background: white;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a.cta-nav {
+    padding: 6px 12px;
+    background: #0057b8;
+    color: white;
+    border-radius: 4px;
+}
+
+nav a.active {
+    font-weight: 700;
+}
+
+/* ====== HERO ====== */
+
+.hero {
+    background: #f0f4ff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #0057b8;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* ====== PILLARS ====== */
+
+.pillars {
+    padding: 60px 0;
+}
+
+.pillar-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.pillar {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    flex: 1;
+}
+
+/* ====== VALUE SECTION ====== */
+
+.value {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* ====== PAGE HEADER ====== */
+
+.page-header {
+    background: #eef2ff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* ====== CONTENT ====== */
+
+.content {
+    padding: 40px 0;
+}
+
+.content ul {
+    line-height: 1.8;
+}
+
+/* ====== FOOTER ====== */
+
+footer {
+    background: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
